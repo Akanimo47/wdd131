@@ -1,13 +1,4 @@
-@media screen and (max-width: 768px) {
-    .temple-gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-@media screen and (max-width: 480px) {
-    .temple-gallery {
-        grid-template-columns: 1fr;
-    }
-
+@media (min-width: 37.5em) {
 	h1 {
 		font-size: 2.5rem;
 		margin-left: 10px;
@@ -41,5 +32,4 @@
 		display: grid;
         grid-template-columns: repeat(3, 1fr)
     }
-}
 }

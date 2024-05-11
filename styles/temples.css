@@ -1,4 +1,13 @@
-@media (min-width: 37.5em) {
+@media screen and (max-width: 768px) {
+    .temple-gallery {
+            grid-template-columns: repeat(2, 1fr);
+    }
+    
+@media screen and (max-width: 480px) {
+    .temple-gallery {
+            grid-template-columns: 1fr;
+    }
+    
     body {
         display: grid;
         grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
@@ -105,4 +114,5 @@
         margin-top: 15px;
         margin-bottom: 0;
     }
+}
 }
