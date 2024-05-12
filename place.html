@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Data and Weather for Nigeria</title>
+    <meta name="author" content="Akanimo Ephriam Ebong">
+    <meta name="description" content="A page with data and weather information for Nigeria.">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Reddit+Sans+Condensed:wght@200..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/Nigerian-Large.webp" media="(min-width: 800px)">
+                <img src="images/Nigerian-flag-small.webp"
+                    alt="Nigerian flag">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <th>Area:</th>
+                    <td>356,669 mi²</td>
+                </tr>
+                <tr>
+                    <th>Population:</th>
+                    <td>218.5 million</td>
+                </tr>
+                <tr>
+                    <th>Capital:</th>
+                    <td>Abuja</td>
+                </tr>
+                <tr>
+                    <th>Language:</th>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <th>Currency:</th>
+                    <td>Naira</td>
+                </tr>
+                <tr>
+                    <th>Time Zone:</th>
+                    <td>GMT +1</td>
+                </tr>
+                <tr>
+                    <th>Calling Code:</th>
+                    <td>+234</td>
+                </tr>
+                <tr>
+                    <th>Internet TLD:</th>
+                    <td>.ng</td>
+                </tr>
+            </table>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/Weather-storm-cloud.svg" alt="a sun icon hidden behind some clouds">
+            <table>
+                <tr>
+                    <th>Temperature:</th>
+                    <td>27° C</td>
+                </tr>
+                <tr>
+                    <th>Conditions:</th>
+                    <td>Haze</td>
+                </tr>
+                <tr>
+                    <th>Wind:</th>
+                    <td>4 km/h</td>
+                </tr>
+                <tr>
+                    <th>Wind Chill:</th>
+                    <td id="windChill"></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <span id="currentyear"></span>
+        <p id="lastModified">Last Modified</p>
+    </footer>
 </body>
+
 </html>
