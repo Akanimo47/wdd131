@@ -7,18 +7,14 @@
     <meta name="description" content="Temple Album - Akanimo Ebong">
     <meta name="author" content="Akanimo Ephraim Ebong">
     <link rel="stylesheet" href="styles/temples.css">
-    <script src="scripts/temples.js" defer></script>
     <link rel="stylesheet" href="styles/temples-large.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="scripts/temples.js" defer></script>
 </head>
 <body>
     <header>
         <div class="navigation">
             <h1>Temple Album</h1>
-            <button id="menu" aria-label="Menu"></button>
+            <button id="menu"></button>
             <nav>
                 <a href="#">Home</a>
                 <a href="#">Old</a>
@@ -70,8 +66,8 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="year-highlight">&copy; <span id="copyright-year"></span> | Akanimo Ephraim Ebong | Nigeria</div>
-        <div>Last modified: <span id="last-modified"></span></div>
+        <p>© <span id="currentYear"></span> ✨Akanimo Ephraim Ebong✨ Nigeria</p>
+        <p id="lastModified">Last Modification: </p>
     </footer>
 </body>
 </html>
